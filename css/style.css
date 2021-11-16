@@ -21,6 +21,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    font-size: 1.8rem;
     line-height: 1.4;
 }
 
@@ -32,23 +33,12 @@ h2 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 4.2rem;
 }
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 6rem;
-    }
-    h2 {
-        font-size: 4.2rem;
-    }
-}
-    
-
 
 ul {
     list-style: none;
@@ -98,7 +88,7 @@ img {
 
 .welcome-section{
     height: 100vh;
-    background-color: #000;
+    background-color: #000; 
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     display: flex;
     flex-direction: column;
@@ -119,7 +109,7 @@ img {
     font-style: italic;
 }
 
-/* projects-section */
+/* Projects-section */
 
 .projects-section {
     background-color: var(--main-blue);
@@ -144,11 +134,7 @@ img {
     margin-bottom: 6rem;
 }
 
-@media (min-width: 768px) {
-    /* .projects-section {
-      padding: 6rem 1rem;
-    } */
-  
+@media (min-width: 768px) {  
     .projects-grid {
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
@@ -205,16 +191,58 @@ img {
     display: inline-block;
 }
 
-/* .project-btn:hover > i {
-    transform: translate(2px);
+/* Contact-section */
+
+.contact-section {
+    background-color: var(--main-gray);
+    padding: 0 2rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    color: var(--main-white);
 }
 
-.project-btn > i{
+.contact-text h2 {
+    margin: 0; 
+    font-size: 6rem;
+}
 
-      transform: translateX(0);
-      transition: transform 0.3s ease-out;
-      display: inline-block;
-} */
+.contact-text p {
+    font-size: 1.8rem;
+    margin: 0;
+    font-style: italic;
+    font-weight: 200;
+}
 
+.contact-links {
+    margin-top: 2rem;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    
+}
 
+.contact-btn{
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-btn:hover{
+    transform: translateY(8px);
+}
+
+/*  Footer */
+.footer-section {
+    background-color: var(--main-gray);
+    padding: 2rem;
+    border-top: 4px solid var(--main-red);
+    text-align: center;
+    color: var(--main-white);
+}
   
